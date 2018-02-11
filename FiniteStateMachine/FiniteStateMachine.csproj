@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Copyright>Furkan Türkal</Copyright>
+    <PackageId>FiniteStateMachine</PackageId>
+    <Authors>FiniteStateMachine</Authors>
+    <Company>FiniteStateMachine</Company>
+    <Product>FiniteStateMachine</Product>
+    <AssemblyName>FiniteStateMachine</AssemblyName>
+    <RootNamespace>FiniteStateMachine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandler\" />
+  </ItemGroup>
+
+</Project>

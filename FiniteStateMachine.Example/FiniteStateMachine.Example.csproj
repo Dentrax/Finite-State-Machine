@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Copyright>Furkan Türkal</Copyright>
+    <PackageId>FiniteStateMachine.Example</PackageId>
+    <Authors>FiniteStateMachine.Example</Authors>
+    <Company>FiniteStateMachine.Example</Company>
+    <Product>FiniteStateMachine.Example</Product>
+    <AssemblyName>FiniteStateMachine.Example</AssemblyName>
+    <RootNamespace>FiniteStateMachine.Example</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FiniteStateMachine\FiniteStateMachine.csproj" />
+  </ItemGroup>
+
+</Project>
