@@ -1,6 +1,6 @@
 ﻿#region License
 // ====================================================
-// EasySSA Copyright(C) 2018 Furkan Türkal
+// FiniteStateMachine Copyright(C) 2018 Furkan Türkal
 // This program comes with ABSOLUTELY NO WARRANTY; This is free software,
 // and you are welcome to redistribute it under certain conditions; See
 // file LICENSE, which is part of this source code package, for details.
@@ -9,7 +9,7 @@
 
 namespace FiniteStateMachine
 {
-    public abstract class StateBase : State<StateType> {
+    public abstract class StateBase : State<StateType>, IState<StateType> {
 
         public StateBase(FiniteStateMachine fsm, StateType stateKey) : base(fsm, stateKey) {
 
