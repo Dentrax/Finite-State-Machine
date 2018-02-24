@@ -99,7 +99,7 @@ namespace FiniteStateMachine.Example
         {
             Program.SetupConsole();
 
-            Console.WriteLine("\nNon-Deterministic Finite State Machine Engine\n");
+            Console.WriteLine("\nNon-Deterministic FiniteStateMachine Engine\n");
 
             new Program().Start();
 

@@ -23,7 +23,7 @@ namespace FiniteStateMachine
         }
 
         public virtual void Initialize() {
-
+            //TODO: Your base Initialize codes...
         }
 
         public virtual void Update(float deltaTime) {
@@ -34,14 +34,14 @@ namespace FiniteStateMachine
 
         public void AddState(State<T> state) {
             if (state.StateMachine != this) {
-                throw new Exception("[FiniteStateMachine::AddState()] -> The State can only be added to the State Machine that was used to create it. ");
+                throw new Exception("[FiniteStateMachine::AddState()] -> The State can only be added to the State Machine that was used to create it.");
             }
             this.m_states.Add(state.StateKey, state);
         }
 
         public virtual T MoveTo(T targetStateKey, FiniteStateChangeEventArgs eventArgs = null) {
             if (!this.m_states.ContainsKey(targetStateKey)) {
-                throw new Exception("[FiniteStateMachine::MoveTo()] -> Target state did not exist. Please add the State<T> for key: '" + targetStateKey + "'.");
+                throw new Exception("[FiniteStateMachine::MoveTo()] -> Target state did not exist. Please add the State<T> for key: '" + targetStateKey);
             }
             T previousStateKey = targetStateKey;
             if (this.m_currentState != null) {

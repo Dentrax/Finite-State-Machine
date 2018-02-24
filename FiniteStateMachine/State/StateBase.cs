@@ -11,9 +11,7 @@ namespace FiniteStateMachine
 {
     public abstract class StateBase : State<StateType>, IState<StateType> {
 
-        public StateBase(FiniteStateMachine fsm, StateType stateKey) : base(fsm, stateKey) {
-
-        }
+        public StateBase(FiniteStateMachine fsm, StateType stateKey) : base(fsm, stateKey) { }
 
         public sealed override void _Begin(FiniteStateChangeEventArgs eventArgs, StateType previousStateKey) {
             FiniteStateMachine.Instance.OnStateBegan?.Invoke(new FiniteStateBeganEventArgs(base.StateKey));

@@ -15,5 +15,6 @@ namespace FiniteStateMachine
 {
     public abstract class StateInfo
     {
+        //TODO: Your base StateInfo codes...
     }
 }
